@@ -1,0 +1,214 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+
+/* Styles Home */
+
+
+.div-posts{
+  padding: 50px 80px; 
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.anchor-read-me{
+  color: white;
+}
+
+.anchor-read-me:hover{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.div-posts h1{
+  font-size: 1.8rem;
+  color: #1abc9c;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px lightgray;
+}
+
+body{
+  background-color: #F1F6F5;
+}
+
+.p-intro{
+  color: lightgray;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.p-post{
+  color: gray;
+  letter-spacing: 0.8px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+
+.my-links li a{
+  color: white;
+}
+
+
+.post-full{
+  width: 100%;
+  margin: 30px auto 60px;
+  padding: 50px 30px;
+  background-color: white;
+  border: 0.2px solid lightgray;
+}
+
+.heading-full{
+  color: #1abc9c;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px lightgray;
+}
+
+.comment-section{
+  margin-bottom: 50px;
+}
+
+.comment-section2{
+  margin-bottom: 50px;
+  display: none;
+}
+
+.dark-theme-comments{
+  /* background-color: #6096B4;  */
+  padding: 10px;
+  /* margin-left: 100px; */
+  color: black;
+  border-radius: 10px;
+}
+
+.all-the-posts{
+  /* background-color: white; */
+  /* margin-left: 30%; */
+}
+
+
+.login-details{
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.comment-image{
+  border-radius: 100%;
+  width: 20px;
+}
+
+.comment-date{
+  display: inline;
+  margin-left: 10px;
+  color: black;
+}
+
+.comment-name{
+  display: inline;
+  margin-left: 10px;
+}
+
+.comment-comment{
+  padding: 10px 20px;
+}
+
+.dictionary{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%; 
+}
+
+.dictionary > .term {
+  border: 0.1px solid lightgray;
+  margin-bottom: 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.about-contact-color-me{
+  margin-top: 10px;
+  height: 5px;
+  background-color: lightgray;
+}
+
+.about-contact-color-me2{
+  height: 5px;
+  background-color: lightgray;
+}
+
+.about-contact{
+  background-color: white;
+  padding: 40px;
+}
+
+.my-hr{
+  margin: 0px;
+  border-top: 1px dotted gray;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+
+h6{
+  margin-top: 80px;
+}
+
+.form-control{
+  margin-bottom: 20px;
+}
+
+
+.compose-me{
+  font-weight: bold;
+  color: #1abc9c;
+  font-size: 2rem; 
+  margin-bottom: 20px;
+}
+
+

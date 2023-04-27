@@ -1,0 +1,23 @@
+
+<%- include("header"); -%>
+
+<dl class="dictionary">
+  <% posts.forEach(function(element){ %>
+    <div class="term">
+      <div class="about-contact-color-me2"></div>
+      <div class="div-posts">
+        <h1><%=element.title%></h1>
+        <p class="p-intro">by Everything TM | <%=element.date%> | My blog</p>
+        <p class="p-post">
+        <%=element.post.substring(0, 1000) + " ..."%>
+        <br><br>
+        <button class="btn btn-primary"><a class="anchor-read-me" href="/posts/<%=element.title%>">Read More</a></button>
+        </p>
+      </div>
+
+    </div>
+    <% }) %>
+  </dl>    
+
+
+<%- include("footer"); -%>

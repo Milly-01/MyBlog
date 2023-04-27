@@ -1,0 +1,91 @@
+<%- include("header"); -%>
+
+  
+    <div class="post-full">
+      <h1 class="heading-full"><%=title%></h1>
+      <p class="p-intro">by Everything TM | <%=date%> | My blog</p>
+      <p class="p-post"><%=post%></p>
+    </div>
+
+
+
+    <div class="all-the-posts">
+      <%allthecomments.forEach(function(element){%>
+        <%if(element.commentID == id){%>
+          <div class="dark-theme-comments">
+            <img class="comment-image" src="<%=element.profilepic%>">
+            <p class="comment-date"><%=element.date%></p>
+            <p class="comment-name">| <%=element.fullname%></p>
+            <div class="comment-comment">
+              <p><%=element.comment%></p>
+            </div>
+          </div>
+          <hr class="my-hr">
+    
+       <% }%>
+      <%});%>
+    </div>
+
+
+  <h6>Sign In below to leave a comment</h6>
+
+  <!-- Google Sign In -->
+  <div id="g_id_onload"
+    data-client_id="722936290805-dsjgber94buakpd36n2mfuhb5roa758c.apps.googleusercontent.com"
+    data-context="signin"
+    data-ux_mode="popup"
+    data-callback="Google_signIn"
+    data-auto_prompt="false">
+  </div>
+
+  <div class="g_id_signin"
+    data-type="standard"
+    data-shape="rectangular"
+    data-theme="outline"
+    data-text="signin_with"
+    data-size="large"
+    data-logo_alignment="left">
+  </div>
+  <!-- Google Sign In -->
+
+  <div class="login-details">
+    <label id="name"></label>
+    <label id="email"></label>
+  </div>
+
+
+
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="/js/login.js"></script>
+
+
+
+
+
+
+  <div class="comment-section2">
+    <form class="" action="/comment" method="post">
+     
+      <div class="form-group">
+       
+        <textarea class="form-control" name="commentBody" rows="5" cols="20" placeholder="Join the discussion by commenting here ..."></textarea>
+      </div>
+      <input type="hidden" value="<%=id%>" name="input_id">
+      <input type="hidden" value="<%=title%>" name="input_title">
+      <input id="email2" type="hidden" name="em">
+      <input id="myimage2" type="hidden" name="em2">
+      <input id="myname2" type="hidden" name="em3">
+      <button class="btn btn-primary" type="submit" name="button">Comment</button>
+    </form>
+
+  </div>
+
+ 
+
+
+
+ 
+  
+
+<%- include("footer"); -%>
